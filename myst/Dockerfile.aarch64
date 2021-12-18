@@ -1,0 +1,2 @@
+FROM --platform=linux/arm64 mysteriumnetwork/myst:latest
+CMD 'service --agreed-terms-and-conditions'
