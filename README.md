@@ -5,4 +5,4 @@
 Refer to [Myst Docs](https://docs.mysterium.network/) for additional information.
 
 ## License
-Licensed under the terms of the [GNU General Public License v3.0](./LICENSE)).
+Licensed under the terms of the [GNU General Public License v3.0](./LICENSE).
