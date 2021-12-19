@@ -5,6 +5,9 @@ services:
   myst:
     build: ./myst
     command: 'service --agreed-terms-and-conditions'
+    dns:
+      - 1.1.1.1
+      - 8.8.8.8
     privileged: true
     restart: always
     network_mode: host
