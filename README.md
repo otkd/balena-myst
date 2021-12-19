@@ -1,5 +1,5 @@
 # balena-myst
-[Mysterium Network](https://www.mysterium.network/) node for [Balena](https://www.balena.io/)
+[Mysterium Network](https://www.mysterium.network/) node for [BalenaOS](https://www.balena.io/os/)
 
 ## Setup
 Refer to [Myst Docs](https://docs.mysterium.network/) for additional information.
