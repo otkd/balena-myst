@@ -4,6 +4,7 @@ volumes:
 services:
   myst:
     build: ./myst
+    command: 'service --agreed-terms-and-conditions'
     privileged: true
     restart: always
     network_mode: host
