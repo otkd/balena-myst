@@ -1,6 +1,7 @@
 version: "2.1"
 volumes:
   myst-data:
+  myst-logs:
 services:
   myst:
     build: ./myst
@@ -13,5 +14,6 @@ services:
     network_mode: host
     volumes:
       - "myst-data:/var/lib/mysterium-node"
+      - "myst-logs:/root/.mysterium"
     labels:
       io.balena.features.kernel-modules: '1'
