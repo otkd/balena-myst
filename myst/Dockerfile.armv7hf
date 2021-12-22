@@ -1,0 +1,38 @@
+FROM balenalib/%%RESIN_MACHINE_NAME%%-ubuntu:focal
+
+# Install Systemd
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        systemd \
+        systemd-sysv \
+    && rm -rf /var/lib/apt/lists/*
+
+ENV container docker
+
+# We never want these to run in a container
+# Feel free to edit the list but this is the one we used
+RUN systemctl mask \
+    dev-hugepages.mount \
+    sys-fs-fuse-connections.mount \
+    sys-kernel-config.mount \
+
+    display-manager.service \
+    getty@.service \
+    systemd-logind.service \
+    systemd-remount-fs.service \
+
+    getty.target \
+    graphical.target \
+    kmod-static-nodes.service
+
+COPY entry.sh /usr/bin/entry.sh
+COPY balena.service /etc/systemd/system/balena.service
+
+RUN systemctl enable /etc/systemd/system/balena.service
+
+STOPSIGNAL 37
+ENTRYPOINT ["/usr/bin/entry.sh"]
+
+# Install Myst
+RUN echo 'deb http://ppa.launchpad.net/mysteriumnetwork/node/ubuntu focal main' | sudo tee -a /etc/apt/sources.list > /dev/null
+RUN install_packages myst
+CMD ["bash"]
