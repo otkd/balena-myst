@@ -33,6 +33,6 @@ STOPSIGNAL 37
 ENTRYPOINT ["/usr/bin/entry.sh"]
 
 # Install Myst
-RUN echo 'deb http://ppa.launchpad.net/mysteriumnetwork/node/ubuntu focal main' | sudo tee -a /etc/apt/sources.list > /dev/null
-RUN install_packages myst
+RUN echo 'deb http://ppa.launchpad.net/mysteriumnetwork/node/ubuntu focal main' | sudo tee -a /etc/apt/sources.list > /dev/null && apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv B22C536D && install_packages myst
+
 CMD ["bash"]
