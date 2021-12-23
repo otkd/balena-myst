@@ -4,6 +4,7 @@ FROM balenalib/raspberrypi3-debian:buster
 RUN apt-get update && apt-get install -y --no-install-recommends \
         systemd \
         systemd-sysv \
+		debconf-utils \
     && rm -rf /var/lib/apt/lists/*
 
 ENV container docker
@@ -14,12 +15,10 @@ RUN systemctl mask \
     dev-hugepages.mount \
     sys-fs-fuse-connections.mount \
     sys-kernel-config.mount \
-
     display-manager.service \
     getty@.service \
     systemd-logind.service \
     systemd-remount-fs.service \
-
     getty.target \
     graphical.target \
     kmod-static-nodes.service
@@ -32,6 +31,9 @@ RUN systemctl enable /etc/systemd/system/balena.service
 STOPSIGNAL 37
 ENTRYPOINT ["/usr/bin/entry.sh"]
 
+ENV DEBIAN_FRONTEND noninteractive
+# Workaround for resolvconf
+RUN echo "resolvconf resolvconf/linkify-resolvconf boolean false" | debconf-set-selections && install_packages resolvconf
 # Install Myst
 RUN echo 'deb http://ppa.launchpad.net/mysteriumnetwork/node/ubuntu focal main' | sudo tee -a /etc/apt/sources.list > /dev/null && apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv B22C536D && install_packages myst
 
