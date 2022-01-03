@@ -4,7 +4,7 @@
 ## Setup
 ###### One click deploy to [BalenaCloud](https://www.balena.io/cloud)
 [![balena deploy button](https://www.balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/otkd/balena-myst)
-
+When deploying to BalenaCloud it is recommended to select the `Production` image for the security of your node.
 
 Continue with guided setup in the Myst node dashboard: [http://*node-ip*:4449](http://*node-ip*:4449)
 
