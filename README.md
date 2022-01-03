@@ -2,10 +2,14 @@
 [Mysterium Network](https://www.mysterium.network/) node for [BalenaOS](https://www.balena.io/os/)
 
 ## Setup
+
+### Balena
 ###### One click deploy to [BalenaCloud](https://www.balena.io/cloud)
 [![balena deploy button](https://www.balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/otkd/balena-myst)
+
 When deploying to BalenaCloud it is recommended to select the `Production` image for the security of your node.
 
+### Myst Node
 Continue with guided setup in the Myst node dashboard: [http://*node-ip*:4449](http://*node-ip*:4449)
 
 ##### For additional information or help refer to [Myst Docs](https://docs.mysterium.network/)
