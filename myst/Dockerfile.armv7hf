@@ -34,7 +34,10 @@ ENTRYPOINT ["/usr/bin/entry.sh"]
 ENV DEBIAN_FRONTEND noninteractive
 # Workaround for resolvconf
 RUN echo "resolvconf resolvconf/linkify-resolvconf boolean false" | debconf-set-selections && install_packages resolvconf
-# Install Myst
-RUN echo 'deb http://ppa.launchpad.net/mysteriumnetwork/node/ubuntu focal main' | sudo tee -a /etc/apt/sources.list > /dev/null && apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv B22C536D && install_packages myst
+# Install Myst & Autoupgrades
+RUN echo 'deb http://ppa.launchpad.net/mysteriumnetwork/node/ubuntu focal main' | sudo tee -a /etc/apt/sources.list > /dev/null && apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv B22C536D && install_packages myst unattended-upgrades apt-listchanges
+
+COPY 20auto-upgrades /etc/apt/apt.conf.d/20auto-upgrades
+COPY 50unattended-upgrades /etc/apt/apt.conf.d/50unattended-upgrades
 
 CMD ["bash"]
