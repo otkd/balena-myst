@@ -22,7 +22,7 @@ assets:
     type: blob.asset
     data:
       url: >-
-        https://github.com/mysteriumnetwork/node/blob/573aa55c44d9dfeba0b0ce0d204343a54ba48639/logo.png
+        https://raw.githubusercontent.com/otkd/balena-myst/master/logo.png
 data:
   defaultDeviceType: raspberrypi4-64
   supportedDeviceTypes:
