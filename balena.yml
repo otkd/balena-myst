@@ -1,0 +1,34 @@
+name: balena-myst
+type: sw.application
+description: >-
+  Mysterium Network is building a global peer to peer network.
+  Nodes earn for providing VPN service to users all over the world.
+joinable: false
+post-provisioning: >-
+  ## Usage instructions
+
+  Follow the [onboarding process](https://mystnodes.com/onboarding)
+
+  If the onboarding flow did not work go to your NodeUI:
+  [http://*node-ip*:4449](http://*node-ip*:4449)
+  and claim manually by entering your API key which you can find on your
+  [Myst Nodes Profile](https://mystnodes.com/me).
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: 'https://github.com/otkd/balena-myst'
+  logo:
+    type: blob.asset
+    data:
+      url: >-
+        https://github.com/mysteriumnetwork/node/blob/573aa55c44d9dfeba0b0ce0d204343a54ba48639/logo.png
+data:
+  defaultDeviceType: raspberrypi4-64
+  supportedDeviceTypes:
+    - raspberrypi4-64
+    - raspberrypi3
+    - raspberrypi3-64
+    - raspberrypi400-64
+    - genericx86-64-ext
+version: 1.3.3
