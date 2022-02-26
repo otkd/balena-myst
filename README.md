@@ -9,6 +9,8 @@
 
 When deploying to BalenaCloud it is recommended to select the `Production` image for the security of your node.
 
+Also available directly on [balenaHub](https://hub.balena.io/gh_otkd/balena-myst). 
+
 ### Myst Node
 #### Continue by following the [onboarding process](https://mystnodes.com/onboarding).
 If the new onboarding flow did not work then try going to your NodeUI at [http://*node-ip*:4449](http://*node-ip*:4449) and claim manually by entering your API key which you can find on your [Myst Nodes Profile](https://mystnodes.com/me).
