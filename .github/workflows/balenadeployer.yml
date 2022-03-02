@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   balena_cloud_build:
