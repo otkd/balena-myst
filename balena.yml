@@ -1,7 +1,7 @@
 name: balena-myst
 type: sw.application
 description: >-
-  Mysterium Network is building a global peer to peer network.
+  [Mysterium Network](https://www.mysterium.network) is building a global peer to peer network.
   Nodes earn for providing VPN service to users all over the world.
 joinable: false
 post-provisioning: >-
