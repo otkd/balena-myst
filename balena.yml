@@ -7,7 +7,7 @@ joinable: false
 post-provisioning: >-
   ## Usage instructions
 
-  Follow the [onboarding process](https://mystnodes.com/onboarding)
+  Follow the [onboarding process](https://mystnodes.com/claiming)
 
   If the onboarding flow did not work go to your NodeUI:
   [http://*node-ip*:4449](http://*node-ip*:4449)
