@@ -1,6 +1,6 @@
 # balena-myst
 
-[Mysterium Network](https://www.mysterium.network/) node for [BalenaOS](https://www.balena.io/os/) Refer to the [main repo](https://github.com/mysteriumnetwork/node) to run a node on Linux directly or Windows/MacOS with Docker.
+[Mysterium Network](https://www.mysterium.network/) node for [BalenaOS](https://www.balena.io/os/), also available on Linux directly or Windows/MacOS with Docker via the [main repo](https://github.com/mysteriumnetwork/node).
 
 ## Setup
 
