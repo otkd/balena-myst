@@ -22,7 +22,7 @@ assets:
     type: blob.asset
     data:
       url: >-
-        https://raw.githubusercontent.com/otkd/balena-myst/master/logo.png
+        https://raw.githubusercontent.com/otkd/balena-myst/master/logo.svg
 data:
   defaultDeviceType: raspberrypi4-64
   supportedDeviceTypes:
