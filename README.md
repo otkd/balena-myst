@@ -1,5 +1,6 @@
 # balena-myst
-[Mysterium Network](https://www.mysterium.network/) node for [BalenaOS](https://www.balena.io/os/)
+
+[Mysterium Network](https://www.mysterium.network/) node for [BalenaOS](https://www.balena.io/os/) Refer to the [main repo](https://github.com/mysteriumnetwork/node) to run a node on Linux directly or Windows/MacOS with Docker.
 
 ## Setup
 
@@ -8,6 +9,8 @@
 [![balena deploy button](https://www.balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/otkd/balena-myst)
 
 When deploying to BalenaCloud it is recommended to select the `Production` image for the security of your node.
+
+![Example of Balena Dashboard](/balenadashboard.png)
 
 Also available directly on [balenaHub](https://hub.balena.io/gh_otkd/balena-myst).
 
