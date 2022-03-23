@@ -1,1 +1,1 @@
-FROM mysteriumnetwork/myst:1.4.11-alpine
+FROM mysteriumnetwork/myst:1.4.13-alpine
