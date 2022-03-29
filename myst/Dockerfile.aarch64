@@ -1,1 +1,1 @@
-FROM --platform=linux/arm64 mysteriumnetwork/myst:1.5.0-alpine
+FROM --platform=linux/arm64 mysteriumnetwork/myst:1.6.0-alpine
