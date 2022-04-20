@@ -20,5 +20,9 @@ If the new onboarding flow did not work then try going to your NodeUI at [http:/
 
 ##### For additional information or help refer to [Myst Docs](https://docs.mysterium.network/)
 
+## To-do
+- [ ] Ngrok (or similar) container for NodeUI
+- [ ] Optional tequilapi webapp to manage remote nodes
+
 ## License
 Licensed under the terms of the [GNU General Public License v3.0](./LICENSE).
