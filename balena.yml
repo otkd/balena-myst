@@ -26,9 +26,9 @@ assets:
 data:
   defaultDeviceType: raspberrypi4-64
   supportedDeviceTypes:
-    - raspberrypi4-64
+    - raspberry-pi2
     - raspberrypi3
     - raspberrypi3-64
+    - raspberrypi4-64
     - raspberrypi400-64
-    - genericx86-64-ext
-version: 1.6.6
+version: 1.6.7
