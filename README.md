@@ -1,5 +1,7 @@
 # balena-myst
 
+![Balena Deploy](https://github.com/otkd/balena-myst/actions/workflows/balenadeployer.yml/badge.svg)
+
 [Mysterium Network](https://www.mysterium.network/) node for [BalenaOS](https://www.balena.io/os/), also available on Linux directly or Windows/MacOS with Docker via the [main repo](https://github.com/mysteriumnetwork/node).
 
 ## Setup
