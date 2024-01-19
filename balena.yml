@@ -7,7 +7,7 @@ joinable: false
 post-provisioning: >-
   ## Usage instructions
 
-  Follow the [onboarding process](https://mystnodes.com/claiming)
+  Follow the [onboarding process](https://mystnodes.com/onboarding/rpi/install/2)
 
   If the onboarding flow did not work go to your NodeUI:
   [http://*node-ip*:4449](http://*node-ip*:4449)
@@ -31,4 +31,6 @@ data:
     - raspberrypi3-64
     - raspberrypi4-64
     - raspberrypi400-64
-version: 1.19.4
+    - raspberrypi5
+    - raspberrypicm4-ioboard
+version: 1.99.0
