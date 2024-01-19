@@ -31,4 +31,6 @@ data:
     - raspberrypi3-64
     - raspberrypi4-64
     - raspberrypi400-64
+    - raspberrypi5
+    - raspberrypicm4-ioboard
 version: 1.99.0
